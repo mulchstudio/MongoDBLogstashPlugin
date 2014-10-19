@@ -52,7 +52,7 @@ Parameters
 
 :collection ==> type string, required. The name of the mongodb collection
 
-:sync_mode ==> one of [ "full", "stored", "force" ], requiered. 
+:sync_mode ==> one of [ "full", "stored", "force" ], required. 
 	- full = normal behavior, get the existing data+oplog with memory of where we stopped in case of crash (uses :oplog_sync_flush_inteval and :oplog_sync_file)
 	- stored = ignore the oplog
 	- force = existing data+oplog regardless of the content of :oplog_sync_file
